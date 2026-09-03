@@ -11,15 +11,21 @@ OctoAcme runs projects using a lightweight, iterative approach that emphasizes:
 - **Data-informed decisions** based on measurable outcomes
 - **Psychological safety** and continuous learning
 
-### Project Lifecycle Overview
+## OctoAcme Processes Overview
 
-OctoAcme follows a five-phase lifecycle to deliver projects: **Initiation**, **Planning**, **Execution**, **Release**, and **Close & Retrospective**. During initiation, teams validate business need and align stakeholders around a lightweight Project One-pager that captures the problem statement, objectives, success metrics, and resource requirements. Once approved by the Product Lead and stakeholders, work moves into planning, where the backlog is prioritized, acceptance criteria are defined, dependencies are identified, and a Definition of Done is established. This deliberate gate-keeping approach ensures that only well-scoped, clearly understood work enters execution.
+OctoAcme follows a structured, lifecycle-based approach to project management that spans five key phases: **Initiation**, **Planning**, **Execution**, **Release**, and **Close & Retrospective**.
 
-Execution at OctoAcme is coordinated through a structured team rhythm: daily 15-minute standups focused on progress and blockers, weekly delivery syncs with stakeholders, and regular demos at sprint or milestone boundaries. Work flows through a GitHub Projects board with columns spanning Backlog, Ready, In Progress, In Review, QA, and Done. Pull requests are kept small (≤400 lines when possible), include issue links and acceptance criteria, and require at least one approval before merging. Quality assurance is embedded throughout delivery via unit tests for new logic, integration tests where applicable, end-to-end smoke tests for critical flows, and security scanning in the CI pipeline. Risk management is continuous: teams triage blockers at the standup level, escalate to the PM and Product Lead when needed, and track all risks in a centralized register with clear ownership and mitigation plans.
+### The Project Lifecycle
+
+**Initiation** begins with validating business need and aligning stakeholders around a lightweight Project One-pager that captures the problem statement, objectives, success metrics, and resource requirements. Once approved by the Product Lead and stakeholders, work moves into **Planning**, where the backlog is prioritized, acceptance criteria are defined, dependencies are identified, and a Definition of Done is established. This deliberate gate-keeping approach ensures that only well-scoped, clearly understood work enters execution.
+
+**Execution** at OctoAcme is coordinated through a structured team rhythm: daily 15-minute standups focused on progress and blockers, weekly delivery syncs with stakeholders, and regular demos at sprint or milestone boundaries. Work flows through a GitHub Projects board with columns spanning Backlog, Ready, In Progress, In Review, QA, and Done. Pull requests are kept small (≤400 lines when possible), include issue links and acceptance criteria, and require at least one approval before merging. Quality assurance is embedded throughout delivery via unit tests for new logic, integration tests where applicable, end-to-end smoke tests for critical flows, and security scanning in the CI pipeline. Risk management is continuous: teams triage blockers at the standup level, escalate to the PM and Product Lead when needed, and track all risks in a centralized register with clear ownership and mitigation plans.
+
+**Release & Deployment** standardizes how OctoAcme ships features to production to reduce risk and improve observability. All acceptance criteria must be met, CI and security scans must pass, release notes must be drafted, and rollback plans must be documented before deployment. Post-release, teams verify production health and announce changes to stakeholders. Finally, **Close & Retrospective** captures learnings through structured retrospectives (45–75 minutes) where teams discuss what went well, what could improve, and document actionable next steps with clear owners and due dates. This continuous improvement culture ensures learnings feed back into the process documentation itself, making OctoAcme's practices increasingly refined.
+
+### Organizational Model & Communication
 
 OctoAcme's organizational model clarifies roles across three primary personas: **Project Managers** coordinate schedules, risks, and communications; **Product Managers** define what to build, prioritize the backlog, and measure success; and **Developers** implement features, write tests, and collaborate on design. A weekly sync between PM and Product Manager, twice-weekly standups for the delivery team, and monthly stakeholder updates create consistent touch points across all levels. Communication templates standardize status reporting (progress, next steps, risks, decisions needed) and incident response, while escalation paths channel issues from team level → PM → Product Lead → Sponsor, with security incidents following a dedicated runbook.
-
-Finally, OctoAcme closes every project or major milestone with a structured retrospective (45–75 minutes) that captures what went well, what could improve, and actionable next steps. Action items are tracked with clear owners and due dates, reviewed at weekly PM syncs, and prioritized to avoid overload. This continuous improvement culture ensures learnings feed back into the process documentation itself, making OctoAcme's practices increasingly refined and team-wide adoption increasingly seamless.
 
 ## Process Documentation
 
@@ -63,3 +69,9 @@ Finally, OctoAcme closes every project or major milestone with a structured retr
 ## Contributing
 
 To request updates or additions to these process docs, use the [Add Content to Project Management Process Docs](../.github/ISSUE_TEMPLATE/add-update-content-to-process-docs.yml) issue template.
+
+### Acceptance Criteria for Updates
+
+- Content aligns with existing process docs
+- Update improves clarity or closes a documented gap
+- Proposed content has been reviewed with stakeholders (if needed)
